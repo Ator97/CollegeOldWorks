@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Js</title>
+</head>
+<body>
+	<p id = "uno" onclick="cambiar()" style = "cursor: progress" >Hola&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hola</p>
+
+	<script>
+		function cambiar(){
+			document.getElementById("uno").innerHTML = "Adios!";
+		}
+
+
+	</script>
+
+
+	<input id = "miinput" type = "text" value = " predeteminado">
+	<button  id = "boton">Mandame algo</button>
+	<div id = "primerdiv"> Aqui hay algo </div>
+
+<script>
+
+
+	
+var texto = document.getElementById("boton").onclick=function(){
+	texto = document.getElementById("miinput").value;
+	document.getElementById("primerdiv").innerHTML = texto;
+}
+
+</script>
+
+</body>
+</html>

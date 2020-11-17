@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Selector aun más avanzado :O</title>
+
+	<style>
+		a[target]{ /*Funciona con que solo exista el atributo target en la etiqueta*/
+			background-color: gray;
+		}
+
+		a[target=_blank]{
+			background-color: red;
+		}
+
+		img{
+			width: 50%;
+			height: 50%;
+		}
+
+		img[title~=aleman]{ 	/*Funcona si esta contenida en el valor derl atributo*/
+			border: 5px solid red;
+		}
+
+		img[title~=ruso]{
+			border: 5px solid blue;
+		}
+
+		p[lang|=en]{	/*Solo funciona cuando el valor esta al inicio del valor del atributo*/
+			background-color: gray;
+		}
+
+		div[class*=test]{
+			background-color: #fff00;
+		}
+
+	</style>
+</head>
+<body>
+	<p>Los links con un target van a quedar en gris</p>
+
+	<a href="http://www.w3schools.com">w3schools.com</a>
+	<a href="http://www.facebook.com" target="_blank">Facebook</a>
+	<a href="http://www.wikipedia.com" target="_top">Wikipedia</a>
+	<a href="http://www.youtube.com" target="_blank">Youtube</a>
+
+	<p>Se pone en gris todo lo que empieza con en</p>
+	<p lang="en">Hello!</p>
+	<p lang="en-us">Hi!</p>
+	<p lang="en-gb">Hello!</p>
+	<p lang="us">Hi!</p>
+	<p lang="no">Hei!</p>
+
+	<p>Seleccionar solo la clase test</p>
+	<div class="first_test">El primer div</div>
+	<div class="second">El segundo div</div>
+	<div class="test">Tercer div</div>
+	<p class="test">Esto es un parrafo :v</p>
+
+	<p>¿Cuál es el tanque aleman de los siguientes carros?</p>
+
+	<img src="img/is7.jpg" title="Tanque pesado ruso">
+	<img src="img/tiger.jpg" title="Tanque pesado aleman">
+	<img src="img/t3485.jpg" title="Tanque medio ruso">
+</body>
+</html>

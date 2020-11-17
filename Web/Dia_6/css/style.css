@@ -1,0 +1,23 @@
+.galeria-container{
+	background: rgba(0,0,0,0,3);
+	padding 50px;
+	/*diaplay: none;*/
+}
+
+ul li {
+	.cursor: pointer;
+}
+
+ul li: hover{
+	opacity: 0.8;
+}
+
+.tache{
+	color : ·f1f1f1;
+	font-size: 30px;
+	position: relative;;
+	top: -45px;
+	left: -45px;
+	cursor: pointer;;
+
+}

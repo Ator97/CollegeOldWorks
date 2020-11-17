@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>Banjimex</title>
+		<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+	</head>
+	<body>
+
+		<script src="js/init.js"></script>
+		<script type="text/javascript" src="js/jquery-2.1.1.min.js"></script>
+		<script type="text/javascript" src="js/materialize.min.js"></script>
+		<script src="js/init.js"></script>
+		<script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+		<!-- Inicio del nav -->
+
+		<!-- Dropdown Structure -->
+		<ul id="dropdown1" class="dropdown-content">
+			<li><a href="create.php">Crear Usuario</a></li>
+			<li class="divider"></li>
+			<li><a href="login.php">Ingresar como usuario</a></li>
+			<li class="divider"></li>
+		</ul>
+
+		<!-- Modal Historia -->
+		<div id="modal1" class="modal">
+			<div class="modal-content">
+				<h4>Historia</h4>
+				<p>
+					Fundado en 1970 somos el banco mas imporante del estado del Plan de Abajo, prestamistas experimentados, especialistas en el orden y el progreso.
+				</p>
+				</div>
+				<div class="modal-footer">
+				<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
+				</div>
+		</div>
+
+		<!-- Modal Informacion -->
+		<div id="modal2" class="modal">
+			<div class="modal-content">
+				<h4>Informacion</h4>
+				<p>
+					Banjimex ofrece servicios de primera calidad, apoyandonos de servicios de excelente seguridad para que pueda estar seguro de su dinero, nuestro sistema de transacciones permiten un fácil manejo de sus inversiones
+				</p>
+				</div>
+				<div class="modal-footer">
+				<a href="#" class="modal-action modal-close waves-effect waves-green btn-flat">X</a>
+			</div>
+		</div>
+
+		<nav class="z-depth-2 deep-orange accent-4" >
+			<div class="nav-wrapper">
+				<a href="#" class="brand-logo"> <img src="img/logo.png " width="70" height="65">   </a>
+				<ul id="nav-mobile" class="right hide-on-med-and-down">
+					<li ><a href="index.html">Inicio</a></li>
+					<li><a href="#modal2" class="modal-trigger">Informacion</a></li>
+					<li><a href="#modal1" class="modal-trigger">Historia</a></li>
+					<li class="active"><a href="services.html">Servicios</a></li>
+					<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Sesion<i class="material-icons right"></i></a></li>
+				</ul>
+				</div>
+		</nav>
+
+		<!-- Fin del nav -->
+		<!-- Inicio del contenido de la pagina -->
+
+		<main>
+			<div class="row">
+				<div class="col s1">
+				</div>
+				<div class="col s8">
+					<div clas="row">
+						<div class="col s6" >
+							<div class="card small ">
+								<div class="card-image waves-effect waves-block waves-light">
+									<img class="activator" src="img/img_5.jpg">
+								</div>
+								<div class="card-content">
+									<span class="card-title activator grey-text text-darken-4">¿Necesita tranferir?<i class="material-icons right">|||</i></span>
+								</div>
+								<div class="card-reveal">
+									<span class="card-title grey-text text-darken-4">Tranferencia entre cuentas<i class="material-icons right">X</i></span>
+									<p>La tranferencia de creditos entre nuestros usuarios se encuentra facilitada en las pestañas de deposito que encontrará en su cuenta.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col s6">
+							<div class="card blue-grey darken-1">
+								<div class="card-content white-text">
+									<span class="card-title">Conocer la comunidad</span>
+									<p>En Banjimex nos importa que este conectado, es por esto que le brindamos los servicios necesarios paraque conosca a los demás clientes, pongase en contacto con ellos para una mejor comunicación.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col s6">	
+							<div class="col s12 m12">
+								<div class="card horizontal">
+										<div class="card-image">
+											<img src="img/img_7.jpg">
+										</div>
+										<div class="card-stacked">
+											<div class="card-content">
+												Que usted se sienta seguro es lo mas importante para nosotros, lea nuestras clausulas de privacidad
+											</div>
+										<div class="card-action">
+											<a href="about_us.html">Ir</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col s6">
+							<div class="row">
+								<div class="col s6 m12">
+									<div class="card blue-grey darken-1">
+										<div class="card-content white-text">
+											<span class="card-title">¿No le basta una cuneta?</span>
+											<p>Nuestro sistema le permite manejar mas de una cuenta para que pueda manejar sus ingresos de forma eficiente, cree otra cuenta desde cero o con su misma cuenta genera otra. Usted tiene el control!</p>
+										</div>
+										<div class="card-action">
+											<p><a href="create.html">Cree una cuenta</a></p>
+											<a href="accounts.html">Genere cuentas paralelas</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!--Twitter-->
+
+				<div class="col s3">
+					<br>
+
+					<a class="twitter-timeline" data-width="280" data-height="450" data-theme="dark" data-link-color="#F5F8FA" href="https://twitter.com/TwitterDev">Tweets by TwitterDev</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+				</div>
+			</div>
+		</main>
+		<!--fin del contenido de la pagina-->
+
+		<!-- Inicio del footer -->
+		<footer class="page-footer deep-orange accent-4">
+			<div class="container">
+				<div class="row">
+					<div class="col l4 m12 s12">
+						<h5 class="white-text">Encuentranos en</h5>
+						<p class="grey-text text-lighten-4">Esta es una diccion abosultamente falsa.</p>
+					</div>
+						<div class="col l4 m12 s12">
+						<h5 class="white-text">Redes sociales</h5>
+						<ul>
+								<li><a class="grey-text text-lighten-3" href="http://www.facebook.com">Siguenos en  Facebook</a></li>
+								<li><a class="grey-text text-lighten-3" href="http://www.twitter.com">Siguenos en   Twitter</a></li>
+						</ul>
+						</div>
+						<div class="col l4 m12 s12">
+						<h5 class="white-text"> Deja un mensaje</h5>
+						<form>
+								<div class="input-field ">
+								<input id="first_name" type="text" class="validate white-text">
+								<label class="white-text" for="first_name">Nombre</label>
+								</div>
+							<div class="input-field">
+								<textarea id="textarea1" class="materialize-textarea white-text"></textarea>
+								<label class="white-text" for="textarea1">Mensaje</label>
+							</div>
+								<button type="submit" name="submit" class="waves-effect waves-light btn right ptc">Enviar</button>
+						</form>
+					 </div>
+				</div>
+			</div>
+			<div class="footer-copyright">
+				<div class="container">
+					Copyright  2016 Grupos financieros banjimex
+					<a class="grey-text text-lighten-4 right" href="about_us.html" target="_blank">About us</a>
+				</div>
+			</div>
+		</footer>
+		<!-- Fin del footer -->
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$(".dropdown-button").dropdown();
+			});
+		</script>
+		<script
+			async src="//platform.twitter.com/widgets.js" charset="utf-8">
+		</script>
+		<script type="text/javascript">
+			$(document).ready(function(){
+			$('.modal-trigger').leanModal();
+			});
+		</script>
+	</body>
+</html>

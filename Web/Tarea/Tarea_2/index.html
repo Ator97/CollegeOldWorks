@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="utf-8">
+	<title>Piedra Papel o Tijera</title>
+</head>
+<body>
+	<H1>Jugando</H1>
+	<div>
+		<p>
+			Juego simple de Piedra, Papel o Tijera, los argumentos se reciben por una ventana emergente.
+		</p>
+	</div>
+
+	<script>
+		
+		//Arreglo que contiene las palabras del juego
+
+	arreglo = ["Piedra","Papel","Tijera"];
+
+	var elemento;
+	var seleccion;
+	var contra;
+	elemento = prompt("¿Qué quieres escojer?", "Piedra");
+
+	seleccion = Math.round( Math.random() *10) ;
+
+
+	if (seleccion <= 3){
+
+		contra = arreglo[0];
+
+	}else if (seleccion <= 6) {
+
+		contra = arreglo[1];
+	}else{
+
+		contra = arreglo [2];
+	}
+
+
+	if (  elemento == "Piedra"  || elemento == "piedra" && contra == "Piedra") {
+		alert("Empate");
+
+	}else if ( ( elemento == "Piedra"  || elemento == "piedra") && contra == "Papel") {
+		alert("Has perdido");
+
+	}else if ( ( elemento == "Piedra"  || elemento == "piedra") && contra == "Tijera") {
+		alert("Has ganado");
+
+	} else if ( ( elemento == "Papel"  || elemento == "papel") && contra == "Papel") {
+		alert("Empate");
+
+	}else if ( ( elemento == "Papel"  || elemento == "papel") && contra == "Piedra") {
+		alert("Has ganado");
+
+	}else if ( ( elemento == "Papel"  || elemento == "papel") && contra == "Tijera") {
+		alert("Has perdido");
+
+	}else if ( ( elemento == "Tijera"  || elemento == "tijera") && contra == "Piedra") {
+		alert("Has perdido");
+
+	}else if ( ( elemento == "Tijera"  || elemento == "tijera") && contra == "Papel") 
+		alert("Has ganado");
+
+	}else if ( ( elemento == "Tijera"  || elemento == "tijera") && contra == "Tijera") {
+		alert("Empate");
+
+	}else{
+	alert("Ingrese una palabra valida para el juego");
+	}
+	</script>
+</body>
+</html>

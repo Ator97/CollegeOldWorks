@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+</head>
+<body class="container-fluid">
+
+	<div class="panel panel-default">
+		<div class= "panel-heading">
+			<h3>Startup</h3>
+		</div>
+
+		<div class="panel-body" >
+			<ul class = "list-inline" id="menu-galeria">
+				
+				<li>
+					<img src="img/imagen1.jpg" alt="imagen1">
+				</li>
+				<li>
+					<img src="img/imagen2.jpg" alt="imagen2">
+				</li>
+				<li>
+					<img src="img/imagen3.jpg" alt="imagen3">
+				</li>
+
+			</ul>
+		</div>
+	</div>
+
+	<div class="generados"></div>
+
+	<div class="row">
+		<div class="col-md-6">
+			<H3>Aqui van a aparecer las imagenes de la galeria:</H3>
+				<span class="glyphicon glyphicon-remove">
+				<img class="img-responsive" src="" alt="" id="imagen-principal">
+				</span>
+		</div>
+		
+	</div>
+
+</body>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.pack.js"></script>
+      <script src="js/bootstrap.js" type="text/javascript"></script>   
+      <script>
+      	$(document).on("ready",main);
+      	$('.generados').text("hola prebes");
+      	//$('.generador').html("<h1>Hola Prebes<h1>")
+      	function main(){
+      		//$('body').css("background","red");
+      		$('#menu-galeria li img').on("click", mostrarImagen);
+      	}
+
+      	function mostrarImagen(){
+      		var nombre = $(this).attr('alt');
+      		var direccion = 'img/' + nombre + '.jpg';
+      		$("#imagen-principal").attr('scr', direccion);
+      		$('.galeria-container').show(1000);
+      	}
+      </script>
+
+</html>

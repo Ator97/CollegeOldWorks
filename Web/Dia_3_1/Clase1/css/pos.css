@@ -1,0 +1,35 @@
+div {
+	width: 100px;
+	height: 100px;
+	background: #4A88F4;
+	font-size: 30px;
+	float: left;
+}
+
+.cajaPadre {
+	width: 500px;
+	height: 500px;
+	background:  #000000;
+	position: relative;
+}
+
+.caja {
+	/*position: static;*/
+	/*position:  relative;*/
+	position: absolute;
+	/*position:  fixed;*/
+	top: 0px;
+	bottom: 0px;
+	right: 0px;
+	left: 0px;
+}
+
+img {
+	width: 400px;
+	height:  220px;
+	float: left;
+}
+
+.clear {
+	clear: both;
+}

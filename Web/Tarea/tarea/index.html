@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Tareita</title>
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <meta charset="UTF-8"/>
+</head>
+
+
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="http://proteco.mx/cursos" class="brand-logo">Proteco</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="http://proteco.mx/cursos">Proteco</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="http://proteco.mx/cursos">Otra vez Proteco (no falta imaginacion)</a></li>
+      </ul>
+      <a href="http://proteco.mx/cursos" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Título</h1>
+      <div class="row center">
+      </div>
+      <div class="row center">
+        <a href="http://proteco.mx/cursos" id="download-button" class="btn-large waves-effect waves-light orange">Ve a Proteco.mx</a>
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+  <div class="container">
+	<h5>Elemento 1: Este es un boton totalmente inutil</h5>
+	<button class="btn waves-effect waves-light" type="submit" name="action">
+    Hola, soy inutil
+    <i class="material-icons left">send</i>
+	</button>
+	
+	<h5>Este es un nav totalmente inutil</h5>
+	  <nav>
+		<div class="nav-wrapper">
+		  <div class="col s12">
+            <a href="#!" class="breadcrumb">Pestaña inutil 1</a>
+            <a href="#!" class="breadcrumb">Pestaña inutil 2 </a>
+            <a href="#!" class="breadcrumb">Pestaña inutil 3</a>
+          </div>
+        </div>
+      </nav>
+            
+	<div></div>
+	<h5>Elemento 3: Tarjetas</h5>
+	<div class="row">
+        <div class="col s12 m4">
+          <div class="card">
+            <div class="card-image">
+              <img src="img/van-gogh-fine-art-692060_1024_768.jpg">
+              <span class="card-title">Noche estrellada</span>
+            </div>
+            <div class="card-content">
+              <p>Esto es la descripcion de la imagencita que esta aquí, pero no describo la obra de Van Gogh.</p>
+            </div>
+          </div>
+        </div>
+    </div>
+	  
+	<h5>Elemento 4: Entrada de texto</h5>
+	<div class="row">
+      <div class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <i class="material-icons prefix">textsms</i>
+            <input type="text" id="autocomplete-input" class="autocomplete">
+            <label for="autocomplete-input">Esta bien, pero no sem anda un php o algo</label>
+          </div>
+        </div>
+	  </div>
+	</div>
+        
+	<h5>Elemento 5: Me hago pa' bajo</h5>
+	<ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_drama</i>Aquí encontraras un link de:</div>
+        <div class="collapsible-body">Te la creiste</div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">place</i>Ahora sí hay uno</div>
+        <div class="collapsible-body"><a href="https://es.wikipedia.org/wiki/Isaac_Asimov">Gran personaje</a></div>
+      </li>
+      <li>
+        <div class="collapsible-header"><i class="material-icons">whatshot</i>Para terminar con:</div>
+        <div class="collapsible-body"><a href="http://www.asimovonline.com/asimov_home_page.html">Pagina de fan pages</a></div>
+      </li>
+	</ul>
+        
+		
+
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Footer, sigo sin imaginacion para los titulos</h5>
+          <p class="grey-text text-lighten-4">Relleno del footer</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Links que son sirven pero son de relleno</h5>
+          <ul>
+            <li><a class="white-text" href="#!">Enlace 1</a></li>
+            <li><a class="white-text" href="#!">Enlace 2</a></li>
+            <li><a class="white-text" href="#!">Enlace 3</a></li>
+            <li><a class="white-text" href="#!">Enlace 4</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Hecho por: El morro de nuevo ingreso
+      </div>
+    </div>
+  </footer>
+
+
+  <!--Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script>
+	$(document).ready(function(){
+		/* Inicialización de la entrada de texto autocompletadora */
+		$('input.autocomplete').autocomplete({
+			data: {
+			"Apple": null,
+			"Microsoft": null,
+			"Google": 'http://placehold.it/250x250'
+		}
+		/* Inicialización del menú colapsable */
+		$('.collapsible').collapsible({
+			accordion : false // A setting that changes the collapsible behavior to expandable instead of the default accordion style
+		});
+	};);
+  </script>
+  </body>
+</html>

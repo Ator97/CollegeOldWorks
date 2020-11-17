@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>jQuery</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+		<div class="col-md-6">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<h3>Nuestras Startups</h3>
+				</div>
+				<div class="panel-body">
+					<ul class="list-inline" id="menu-galeria">
+						<li>
+							<img src="img/uber2.png" alt="imagen1">
+						</li>
+						<li>
+							<img src="img/ig.png" alt="imagen2">
+						</li>
+						<li>
+							<img src="img/pinterest1.png" alt="imagen3">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3>Aqui van a aparecer las imágenes de la galería</h3>
+			<div class="galeria-container">
+				<span class="glyphicon glyphicon-remove tache"></span>
+				<img src="" alt="" id="imagen-principal">
+			</div>
+		</div>
+
+		<div class="generados">
+			
+		</div>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<script>
+	$(document).on("ready",main);
+	//$('generados').text("<h1>Hola Prebes</h1>");
+	//$('generados').html("<h1>Hola Prebes</h1>");
+	
+	function main(){
+		//$("body").css("background","red");
+		$('#menu-galeria li img').on("click",mostrarImagen);
+		$('.tache').on("click", ocultarImagen);
+	}
+
+	function mostrarImagen(){
+		var nombre = $(this).attr('alt');
+		var direccion = 'img/' + nombre + '.jpg';
+
+		$("#imagen-principal").attr('src', direccion);
+		$('.galeria-container').show(1000);
+	}
+
+	function ocultarImagen(){
+		$('.galeria-container').hide(1000);
+	}
+</script>
+</html>
